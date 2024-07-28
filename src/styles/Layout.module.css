@@ -1,0 +1,46 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  background-color: var(--bg-main);
+  color: var(--tx-main);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink {
+  color: var(--tx-main); /* 테마에 따라 변경 */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.active {
+  background: #f49f50;
+  color: var(--tx-main);
+}
+
+.main {
+  flex: 1;
+}

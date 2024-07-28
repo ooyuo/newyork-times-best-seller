@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap");
+
+body {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color, #f3ff47);
+  --tx-white: #eaeaea;
+  --bg-main: #111111;
+  --bg-sub: #333333;
+  --tx-main: #ffffff;
+  --card-bg: #ffffff;
+  --card-tx: #000000;
+}
+
+body[data-theme="light"] {
+  --bg-main: #ffffff;
+  --bg-sub: #bdc1c9;
+  --tx-main: #272d2d;
+  --card-bg: #ffffff;
+  --card-tx: #000000;
+}
+
+body[data-theme="dark"] {
+  --bg-main: #111111;
+  --bg-sub: #333333;
+  --tx-main: #ffffff;
+  --card-bg: #272d2d;
+  --card-tx: #ffffff;
+}

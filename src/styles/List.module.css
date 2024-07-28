@@ -1,0 +1,8 @@
+.bookList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bookList li {
+  margin-bottom: 2rem;
+}
