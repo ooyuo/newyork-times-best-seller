@@ -22,6 +22,7 @@ export default function BestsellerList({ bestsellers }: BooksellerListProps) {
       {bestsellers.map((list) => (
         <div key={list.list_name} className={styles.card}>
           <Link
+            prefetch
             href={`/list/${list.list_name_encoded}`}
             className={styles.cardLink}
           >

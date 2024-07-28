@@ -21,6 +21,7 @@ export default function BookList({ books }: BookListProps) {
       {books.map((book) => (
         <div key={book.rank} className={styles.card}>
           <Link
+            prefetch
             href={book.amazon_product_url}
             target="_blank"
             rel="noopener noreferrer"
