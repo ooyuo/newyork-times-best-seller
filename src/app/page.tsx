@@ -2,6 +2,10 @@ import BestsellerList from "@/components/BestsellerList";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "Home",
+};
+
 async function getBestsellers() {
   const res = await fetch("https://books-api.nomadcoders.workers.dev/lists");
   if (!res.ok) {

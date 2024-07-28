@@ -2,10 +2,18 @@ import BookList from "@/components/BookList";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import { Suspense } from "react";
 
+interface ListPageProps {
+  params: { id: string };
+}
+
+export const API_URL = "https://books-api.nomadcoders.workers.dev/list";
+
+export const metadata = {
+  title: "Detail",
+};
+
 async function getBooksInList(listName: string) {
-  const res = await fetch(
-    `https://books-api.nomadcoders.workers.dev/list?name=${listName}`
-  );
+  const res = await fetch(`${API_URL}?name=${listName}`);
   if (!res.ok) {
     throw new Error("Failed to fetch books");
   }
@@ -13,7 +21,7 @@ async function getBooksInList(listName: string) {
   return data.results.books;
 }
 
-export default async function ListPage({ params }: { params: { id: string } }) {
+export default async function ListPage({ params }: ListPageProps) {
   const books = await getBooksInList(params.id);
 
   return (

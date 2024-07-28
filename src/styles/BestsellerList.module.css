@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  height: 100px; /* 고정된 높이 */
+  height: 100px;
 }
 
 .card:hover {

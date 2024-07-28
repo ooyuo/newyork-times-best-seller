@@ -12,11 +12,11 @@ interface List {
   updated: string;
 }
 
-interface Props {
+interface BooksellerListProps {
   bestsellers: List[];
 }
 
-export default function BestsellerList({ bestsellers }: Props) {
+export default function BestsellerList({ bestsellers }: BooksellerListProps) {
   return (
     <div className={styles.grid}>
       {bestsellers.map((list) => (
